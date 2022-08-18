@@ -1,0 +1,11 @@
+mongodb+srv://Danny:DankDanny0828@cluster0.r6eqr.mongodb.net/HalifaxBrewery?retryWrites=true&w=majority
+
+{
+        "province":"Nova Scotia",
+        "region":"Bedford", 
+        "store":"Bivin's Alcohol for Alcoholics",
+        "brand":"Dank Danny",
+        "product":"Tennessee Honey",
+        "facings":18,
+        "logDate":"2022-08-18"
+      }
