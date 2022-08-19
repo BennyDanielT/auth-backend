@@ -1,4 +1,7 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
+const dbConnect = require('../db/dbConnect');
+// dbConnect();
+
 const InventorySchema = new mongoose.Schema({
   province: {
     type: String,
@@ -50,6 +53,20 @@ const InventorySchema = new mongoose.Schema({
   },
 
 });
+// var userSchema = new mongoose.Schema({
+//   full_name: String,
+//   email_address: String,
+//   city: String,
+//   country: String,
+// });
+inventoryTable = mongoose.model('Ivtry', InventorySchema,'inventories');
 
-
-module.exports = mongoose.model.Inventory || mongoose.model('Inventory', InventorySchema);
+module.exports = {
+  fetchData: function (callback) {
+    var inventoryData = inventoryTable.find({});
+    inventoryData.exec(function (err, data) {
+      if (err) throw err;
+      return callback(data);
+    });
+  },
+};

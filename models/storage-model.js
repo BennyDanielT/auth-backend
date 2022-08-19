@@ -48,8 +48,6 @@ const InventorySchema = new mongoose.Schema({
     // unique: [true, 'Email Exist'],
     default: Date.now,
   },
-
 });
 
-
-module.exports = mongoose.model.Inventory || mongoose.model('Inventory', InventorySchema);
+module.exports = mongoose.model.Inventory

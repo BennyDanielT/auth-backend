@@ -9,3 +9,14 @@ mongodb+srv://Danny:DankDanny0828@cluster0.r6eqr.mongodb.net/HalifaxBrewery?retr
         "facings":18,
         "logDate":"2022-08-18"
       }
+
+nodeapp/
+  |__controllers/
+  |     |__fetch-controller.js
+  |__models/
+  |     |__fetch-model.js
+  |__routes/
+  |     |__fetch-route.js
+  |__views/
+  |     |__user-table.ejs
+  |__database.js
