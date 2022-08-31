@@ -20,3 +20,15 @@ nodeapp/
   |__views/
   |     |__user-table.ejs
   |__database.js
+
+  //UPDATING __database
+
+  {
+        "province":"Nova Scotia",
+        "region":"Bedford", 
+        "store":"Bivin's Alcohol for Alcoholics",
+        "brand":"Dank Danny",
+        "product":"Tennessee Honey",
+        "logDate":"2022-08-31",
+        "facings":100
+      }
