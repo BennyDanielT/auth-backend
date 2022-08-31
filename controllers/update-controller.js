@@ -1,38 +1,58 @@
-
 module.exports = {
-  addData: function (req, res) {
+  updateData: async function (req, res) {
     console.log(req.body);
     const Inventory = require('../db/storageModel');
-    const logEntry = new Inventory({
+    // const entry = new Inventory({
+    //   province: req.body.province,
+    //   region: req.body.region,
+    //   store: req.body.store,
+    //   brand: req.body.brand,
+    //   product: req.body.product,
+    //   facings: req.body.facings,
+    //   logDate: req.body.logDate,
+    // });
+
+    const filter = {
       province: req.body.province,
       region: req.body.region,
       store: req.body.store,
       brand: req.body.brand,
       product: req.body.product,
-      facings: req.body.facings,
-      logDate: req.body.logDate,
-    });
+    };
+    const update = { facings: req.body.facings, logDate: req.body.logDate };
 
-    
-    logEntry
-      .save()
-      
-      .then((result) => {
-        res.status(201).send({
-          message: 'Log Entry Created Successfully',
-          result,
-        });
-      })
-      
-      .catch((error) => {
-        res.status(500).send({
-          message: 'Error creating Log Entry',
-          error,
-        });
-      });
+    let doc = await Inventory.findOneAndUpdate(
+      filter,
+      update,
+      {
+        returnOriginal: false,
+      },
+      function (err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.json(result);
+        }
+      },
+    ).clone();
+    // entry
+    //   .save()
+
+    // .then((result) => {
+    //   res.status(201).send({
+    //     message: 'Number of Facings Updated Successfully !',
+    //     result,
+    //   });
+    // })
+
+    // .catch((error) => {
+    //   res.status(500).send({
+    //     message: 'Error Updating Number of Facings',
+    //     error,
+    //   });
+    // });
   },
 };
-
 
 // app.post('/add', (request, response) => {
 //   // create a new entry instance and collect the data
