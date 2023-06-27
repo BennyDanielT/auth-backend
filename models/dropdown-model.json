@@ -1,0 +1,250 @@
+{
+  "provinces": [
+    {
+      "province": "Nova Scotia",
+      "regions": [
+        {
+          "region": "Annapolis Valley",
+          "stores": [
+            {
+              "store": "Store 1",
+              "brands": [
+                {
+                  "brand": "Brand 1",
+                  "products": [
+                    {
+                      "product": "Product 1"
+                    },
+                    {
+                      "product": "Product 2"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 2",
+                  "products": [
+                    {
+                      "product": "Product 3"
+                    },
+                    {
+                      "product": "Product 4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "store": "Store 2",
+              "brands": [
+                {
+                  "brand": "Brand 3",
+                  "products": [
+                    {
+                      "product": "Product 5"
+                    },
+                    {
+                      "product": "Product 6"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 4",
+                  "products": [
+                    {
+                      "product": "Product 7"
+                    },
+                    {
+                      "product": "Product 8"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "region": "Cape Breton",
+          "stores": [
+            {
+              "store": "Store 3",
+              "brands": [
+                {
+                  "brand": "Brand 5",
+                  "products": [
+                    {
+                      "product": "Product 9"
+                    },
+                    {
+                      "product": "Product 10"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 6",
+                  "products": [
+                    {
+                      "product": "Product 11"
+                    },
+                    {
+                      "product": "Product 12"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "store": "Store 4",
+              "brands": [
+                {
+                  "brand": "Brand 7",
+                  "products": [
+                    {
+                      "product": "Product 13"
+                    },
+                    {
+                      "product": "Product 14"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 8",
+                  "products": [
+                    {
+                      "product": "Product 15"
+                    },
+                    {
+                      "product": "Product 16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "province": "Newfoundland",
+      "regions": [
+        {
+          "region": "Avalon Peninsula",
+          "stores": [
+            {
+              "store": "Store 1",
+              "brands": [
+                {
+                  "brand": "Brand 1",
+                  "products": [
+                    {
+                      "product": "Product 1"
+                    },
+                    {
+                      "product": "Product 2"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 2",
+                  "products": [
+                    {
+                      "product": "Product 3"
+                    },
+                    {
+                      "product": "Product 4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "store": "Store 2",
+              "brands": [
+                {
+                  "brand": "Brand 3",
+                  "products": [
+                    {
+                      "product": "Product 5"
+                    },
+                    {
+                      "product": "Product 6"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 4",
+                  "products": [
+                    {
+                      "product": "Product 7"
+                    },
+                    {
+                      "product": "Product 8"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "region": "Central Newfoundland",
+          "stores": [
+            {
+              "store": "Store 3",
+              "brands": [
+                {
+                  "brand": "Brand 5",
+                  "products": [
+                    {
+                      "product": "Product 9"
+                    },
+                    {
+                      "product": "Product 10"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 6",
+                  "products": [
+                    {
+                      "product": "Product 11"
+                    },
+                    {
+                      "product": "Product 12"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "store": "Store 4",
+              "brands": [
+                {
+                  "brand": "Brand 7",
+                  "products": [
+                    {
+                      "product": "Product 13"
+                    },
+                    {
+                      "product": "Product 14"
+                    }
+                  ]
+                },
+                {
+                  "brand": "Brand 8",
+                  "products": [
+                    {
+                      "product": "Product 15"
+                    },
+                    {
+                      "product": "Product 16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

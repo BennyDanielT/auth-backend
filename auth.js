@@ -21,3 +21,20 @@ module.exports = async (request, response, next) => {
     });
   }
 };
+
+//q: what are alternatives to body parser?
+//a: express.json() and express.urlencoded()
+
+// q:example with expess.json() and express.urlencoded()
+// a: const express = require('express');
+// const app = express();
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+
+//a: what is the difference between express.json() and express.urlencoded()
+//q: express.json() parses incoming requests with JSON payloads and is based on body-parser.
+
+//q: body-parser example
+//a: const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));

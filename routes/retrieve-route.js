@@ -6,6 +6,7 @@ var homeController = require('../controllers/home-controller');
 var updateController = require('../controllers/update-controller');
 var addUserController = require('../controllers/add-user-controller');
 var loginController = require('../controllers/login-controller');
+var dropDownController = require('../controllers/dropdown-controller');
 const bodyParser = require('body-parser');
 const dbConnect = require('../db/dbConnect');
 const auth = require('../auth');
@@ -26,12 +27,18 @@ router.use((req, res, next) => {
   next();
 });
 
+router.get('/', homeController.home);
 router.get('/retrieve-data', auth, fetchController.fetchData);
 router.post('/add-data', addController.addData);
 router.put('/update-data', updateController.updateData);
 router.post('/register-user', addUserController.addUser);
 router.post('/login', loginController.login);
-router.get('/', homeController.home);
+router.get('/provinces',dropDownController.getProvinces);
+router.get('/regions',dropDownController.getRegions);
+router.get('/stores',dropDownController.getStores);
+router.get('/brands',dropDownController.getBrands);
+router.get('/products',dropDownController.getProducts);
+
 
 router.get('/free-endpoint', (request, response) => {
   response.json({ message: 'You are free to access me anytime' });
